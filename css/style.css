@@ -1,0 +1,88 @@
+@font-face {
+  font-family: "Futura PT";
+  src: url("../fonts/FuturaPT-Medium.woff2") format("woff2"),
+      url("../fonts/FuturaPT-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Futura PT Book";
+  src: url("../fonts/FuturaPT-Book.woff2") format("woff2"),
+      url("../fonts/FuturaPT-Book.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Futura PT";
+  src: url("../fonts/FuturaPT-Bold.woff2") format("woff2"),
+      url("../fonts/FuturaPT-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+/* MAIN-CODES */
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Futura PT", "Arial", sans-serif;
+  line-height: 1.5;
+  color: #000;
+}
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.img {
+  max-width: 100%;
+  height: auto;
+}
+.logo-img {
+  display: block;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-lis {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+.minu-link {
+  text-decoration: none;
+}
