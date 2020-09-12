@@ -5,34 +5,143 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <title>Veterinary clinic</title>
 </head>
 <body>
   <header class="site-header">
     <div class="container">
-      <nav class="navbar">
-        <a href="index.html">
-          <img class="logo-img" src="" alt="logo img">
-        </a>
+      <div class="top-header-container">
+        <a class="header-location" href="https://yandex.uz/maps/10335/tashkent/?ll=69.251382%2C41.327854&mode=whatshere&whatshere%5Bpoint%5D=69.231182%2C41.335762&whatshere%5Bzoom%5D=14&z=14.6">г. Мариуполь, проспект Победы, 48а</a>
+        <div class="header-tel">
+          <a class="header-tel-link tel-img" href="tel:0676347574">(067) 634 -75 - 74</a>
+          <a class="header-tel-link circlec" href="tel:0676347574">(0637) 57 - 01 - 31</a>
+          <a class="header-tel-link circlec" href="tel:0676347574">(098) 266 - 43 - 89</a>
+        </div>
+        <div class="date-times">
+          <span class="date-time taqvim-img">Пн - Пт 8:00 - 18:00</span>
+          <span class="date-time">Сб - Вс 8:00 - 14:00</span>
+        </div>
+      </div>
+    </div>
 
-      <ul class="menu-list">
-        <li class="menu-item">
-          <a class="minu-link" href="#"></a>
+      <nav class="navbar">
+        <div class="container navbar-style">
+          <a href="index.html">
+            <img class="logo-img" src="img/logo.png" srcset="img/logo.png 1x, img/logo@2x.png 2x" alt="logo img" width="178" height="86">
+          </a>
+  
+        <ul class="menu-list">
+          <li class="menu-item">
+            <a class="minu-link current" href="#">Главная</a>
+          </li>
+          <li class="menu-item">
+            <a class="minu-link" href="#">О Клинике</a>
+          </li>
+          <li class="menu-item">
+            <a class="minu-link" href="#">Наши Услуги</a>
+          </li>
+          <li class="menu-item">
+            <a class="minu-link" href="#">Полезные Статьи</a>
+          </li>
+          <li class="menu-item">
+            <a class="minu-link" href="#">FAQ</a>
+          </li>
+          <li class="menu-item">
+            <a class="minu-link" href="#">Контакты</a>
+          </li>
+        </ul>
+
+        <a href="question.html" class="question-link">Задать вопрос</a>
+  
+        </div>
+    </nav>
+  </header>
+
+  <section class="site-intro">
+    <div class="container">
+      <div class="intro-box">
+          <h1 class="intro-heading">Мы заботимся о <span class="blue-text">ваших питомцах!</span></h1>
+          <p class="intro-patagriph">Вам и Вашему любимцу множество услуг по диагностике, профилактике заболеваний по лечению и уходу за Вашими животными. Профессионалы работающие в нашей клинике сделают все для того, чтобы быстро, эффективно и максимально безболезненно выполнить любие процедуры, которые необходимы Вашему домашнему любимцу.</p>
+          <a href="#services" class="services-link">Наши услуги</a>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="commet-page">
+    <div class="container">
+      <div class="commet-text">
+        <hr class="line">
+        <blockquote class="commet-paragriph">Наша ветеринарная клиника готова уделить максимум внимания Вам и Вашему питамцу. Здоровье и благополучие Ваших животных очень важно для нас и мы стремимся оказать наилучшую возможную ветеринарную помощь.</blockquote>
+        <hr class="line">
+        <p class="idea-owner">Оржоникидзевская Ветеринарная клиника</p>
+      </div>
+    </div>
+  </div>
+
+  <section class="slaider">
+    <div class="container">
+      <h2 class="slaider-heading">Наши услуги</h2>
+
+      <ul id="services" class="slaider-list">
+        <li class="slaider-list-item">
+            <h4 class="slaider-about">Первичный осмотр</h4>
         </li>
-        <li class="menu-item">
-          <a class="minu-link" href="#"></a>
+        <li class="slaider-list-item">
+            <h4 class="slaider-about">Первичный осмотр</h4>
         </li>
-        <li class="menu-item">
-          <a class="minu-link" href="#"></a></li>
-        <li class="menu-item"><a href="#" class="minu-link"></a>
+        <li class="slaider-list-item">
+            <h4 class="slaider-about">Хирургическое вмешательство</h4>
         </li>
-        <li class="menu-item">
-          <a class="minu-link" href="#"></a>
+        <li class="slaider-list-item">
+            <h4 class="slaider-about">Дерматология</h4>
+        </li>
+        <li class="slaider-list-item">
+            <h4 class="slaider-about">Лабораторная диагностика</h4>
+        </li>
+        <li class="slaider-list-item">
+            <h4 class="slaider-about">Офтальмология</h4>
+        </li>
+        <li class="slaider-list-item">
+            <h4 class="slaider-about">УЗИ
+              диагностика</h4>
+        </li>
+        <li class="slaider-list-item">
+            <h4 class="slaider-about">Чипирование</h4>
+        </li>
+        <li class="slaider-list-item">
+            <h4 class="slaider-about">Международные паспорта</h4>
+        </li>
+        <li class="slaider-list-item">
+            <h4 class="slaider-about">Вакцинация</h4>
+        </li>
+        <li class="slaider-list-item">
+            <h4 class="slaider-about">Стоматология</h4>
+        </li>
+        <li class="slaider-list-item">
+            <h4 class="slaider-about">Вызов на дом</h4>
         </li>
       </ul>
-
-    </nav>
     </div>
-  </header>
+  </section>
+
+  <section class="inspection">
+    <div class="container">
+      <div class="display-felx">
+        <img class="inspection-img" src="img/image.jpg" alt="rasm" srcset="img/image.jpg 1x, img/image@2x.jpg 2x">
+      <div class="inspection-box">
+        <h3 class="inspection-header">Первичный осмотр</h3>
+        <p class="inspection-text">По условиям акции в нашей клинике предоставляетса безплатная услуга “Дневной стационар” которая позволяет экономить Ваше время. Вы имеете возможность оставить у нас.</p>
+        <p class="inspection-text">По условиям акции в нашей клинике предоставляетса безплатная услуга “Дневной стационар” которая позволяет экономить Ваше время. Вы имеете возможность оставить у нас.</p>
+
+        <a class="gold-link" href="prices.html">Узнать цену</a>
+        <a class="black-link" href="appointment.html">Записаться на приём</a>
+      </div>
+      </div>
+    </div>
+  </section>
+
+
 </body>
 </html>
