@@ -452,11 +452,159 @@ padding: 153px 0 320px 650px;
   margin: 0;
 }
 
+.slaider-list-item::before {
+  display: block;
+  content: "";
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 21px;
+}
+
+/* .active {
+  box-shadow: 0px 10000px 0px 0px #fff;
+} */
+
+
+.first::before {
+  width: 54px;
+  height: 78px;
+  background-image: url("../img/Vector.png");
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+  .first::before {  background-image: url("../img/Vector@2x.png")}
+}
+
+.second::before {
+  width: 62px;
+  height: 77px;
+  background-image: url("../img/filled-outline.png");
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+  .second::before {  background-image: url("../img/filled-outline@2x.png")}
+}
+
+.third::before {
+  width: 72px;
+  height: 77px;
+  background-image: url("../img/dog-utline.png");
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+  .third::before {  background-image: url("../img/dog-outline@2x.png")}
+}
+
+.fourth::before {
+  width: 76px;
+  height: 76px;
+  background-image: url("../img/dog_outline.png");
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+  .fourth::before {  background-image: url("../img/dog_outline@2x.png")}
+}
+
+.fifth::before {
+  width: 78px;
+  height: 78px;
+  background-image: url("../img/veterinary-lupa.png");
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+  .fifth::before {  background-image: url("../img/veterinary-lupa@2x.png")}
+}
+
+.sixth::before {
+  width: 76px;
+  height: 76px;
+  background-image: url("../img/dogs.png");
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+  .sixth::before {  background-image: url("../img/dogs@2x.png")}
+}
+
+.seventh::before {
+  width: 77px;
+  height: 77px;
+  background-image: url("../img/wolf.png");
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+  .seventh::before {  background-image: url("../img/wolf@2x.png")}
+}
+
+
 .slaider-about {
   margin: 0;
   font-size: 18px;
   line-height: 22px;
 }
+
+.slader-button {
+  width: 45px;
+  height: 45px;
+  background-color: transparent;
+  border: none;
+  outline:none;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.slader-button:hover {
+  background-color: #fff;
+}
+
+.slader-button:active {
+  opacity: 0.5;
+}
+
+
 
 /* inspection */
 
@@ -490,10 +638,23 @@ padding: 153px 0 320px 650px;
   line-height: 21px;
   padding: 16px 36px;
   margin-right: 21px;
+  transition: background-color .3s ease,color 1.3s ease,opacity 1.3s ease;
+}
+
+.gold-link:hover {
+  background-color: #333;
+}
+
+.gold-link:active {
+  opacity: 0.5;
 }
 
 .black-link:hover{
   background-color: #FFBD54;
+}
+
+.black-link:active {
+  opacity: 0.5;
 }
 
 .black-link {
@@ -506,6 +667,7 @@ padding: 153px 0 320px 650px;
   font-size: 16px;
   line-height: 21px;
   padding: 16px 36px;
+  transition: background-color .3s ease,color 1.3s ease,opacity 1.3s ease;
 }
 
 .display-felx {
@@ -520,11 +682,42 @@ padding: 153px 0 320px 650px;
   margin-right: 67px;
 }
 
+/* input dog  */
 
+.dog-input {
+  background-image: url("../img/Group-dog.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin-top: 225px;
+}
 
+.dog-form {
+  display: block;
+  padding: 0px 533px 88px 287px;
+}
 
+.dog-input-heading {
+  font-size: 48px;
+  line-height: 20px;
+  color: #fff;
+  margin: 0;
+  width: 494px;
+  height: auto;
+  margin-bottom: 32px;
+  margin-top: 90px;
+}
 
+.dog-input {
+  /* background-color: #FFFFFF; */
+  border-radius: 5px;
+  padding: 0 147px 12px 22px;
+  outline: none;
+  border: none;
+}
 
-
-
-
+.site-footer {
+  margin-top: 297px;
+  background-color: #F3F3F3;
+  border: 1px solid #EBEBEB;
+}
